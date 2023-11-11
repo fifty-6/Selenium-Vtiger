@@ -1,0 +1,9 @@
+Absolute Xpath		Relative Xpath
+
+-Root of document		-Any child document	
+-Represented by ' / '		-Represented by ' // '	
+-Lengthy			-Short
+-it consumes more time	-It consumes less time
+-high maintanace		-low maintainance
+-need constant checks for 	-checking need not to be frequent
+Xpath
