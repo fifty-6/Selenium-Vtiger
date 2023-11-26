@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cacl</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+		.btn
+		{
+			height: 100%;
+			width: 100%;
+			border-radius: 25px;
+/*			background-color: #0f1012;*/
+			color: ghostwhite;
+			font-size: 25px;
+			border-color: white;
+			background-image: linear-gradient(to right bottom,darkgrey,#1a1c1f,black);
+		}
+		.col
+		{
+			padding: 1px;
+			height: 55px;
+			width: 55px;
+			border-radius:25px;
+		}
+		table
+		{
+			border-radius: 15px;
+			margin-top: 20px;
+			background-color: black;
+			padding-block: 2px;
+			border-color: solid black;
+			background-image: linear-gradient(to right,white,#0c0c0d,#0f1012);
+
+		}
+		.disp
+		{
+			background-image: linear-gradient(to right top,#242629,black);
+/*			background-color: #0c0c0d;*/
+			color: whitesmoke;
+			font-weight: bolder;
+			text-align: right;
+			font-size: 30px;
+			border-color: white;
+			border-radius: 25px;
+			height: 100%;
+			width: 99%;
+			font-family: font-family: 'Handjet', cursive;
+		}
+		body
+		{
+			background-image: linear-gradient(to right,white,#0c0c0d,#0f1012);
+			
+		}
+	</style>
+
+</head>
+<body>
+	<div align="center">
+		<form name="form">
+		<table cellspacing="16px" cellpadding="2px" border="3px">
+										
+										<!-- **DISPLAY** -->
+
+			<tr>
+				<td colspan="4" class="col">
+					<input class="disp" type="text" name="answer" placeholder="0">
+				</td>
+			</tr><tr></tr>
+		<!-- ________________________________________________________________________________ -->
+										
+
+										<!-- **BUTTONS** -->
+
+			<tr>
+				<td class="col"><input class="btn" type="button" value="C" onclick="form.answer.value = '';" ></td>
+				<td class="col"><input class="btn" type="button" value="%" onclick="form.answer.value += '%';"></td>
+				<td class="col"><input class="btn" type="button" value="/" onclick="form.answer.value += '/'; "></td>
+				<td class="col"><input class="btn" type="button" value="x" onclick="form.answer.value += '*'; "></td>
+			</tr>
+			<tr>
+				<td class="col"><input class="btn" type="button" value="9" onclick="form.answer.value += '9'; "></td>
+				<td class="col"><input class="btn" type="button" value="8" onclick="form.answer.value += '8'; "></td>
+				<td class="col"><input class="btn" type="button" value="7" onclick="form.answer.value += '7'; "></td>
+				<td class="col"><input class="btn" type="button" value="-" onclick="form.answer.value += '-'; "></td>
+			</tr><tr>
+				<td class="col"><input class="btn" type="button" value="6" onclick="form.answer.value += '6'; "></td>
+				<td class="col"><input class="btn" type="button" value="5" onclick="form.answer.value += '5'; "></td>
+				<td class="col"><input class="btn" type="button" value="4" onclick="form.answer.value += '4'; "></td>
+				<td class="col"><input class="btn" type="button" value="+" onclick="form.answer.value += '+'; "></td>
+			</tr>	
+			<tr>
+				
+				<td class="col"><input class="btn" type="button" value="3" onclick="form.answer.value += '3'; "></td>
+				<td class="col"><input class="btn" type="button" value="2" onclick="form.answer.value += '2'; "></td>
+				<td class="col"><input class="btn" type="button" value="1" onclick="form.answer.value += '1'; "></td>
+
+				<td rowspan="2" id="equa" class="col"><input class="btn" type="button" value="=" onclick="form.answer.value= eval(form.answer.value) "></td>				
+			</tr>
+			<tr>
+				<td class="col"><input class="btn" type="button" value="." onclick="form.answer.value += '.'; "></td>
+				<td class="col"><input class="btn" type="button" value="0" onclick="form.answer.value += '0'; "></td>
+				<td class="col"><input class="btn" type="button" value=".00" onclick="form.answer.value += '.00'; "></td>	
+			</tr>
+		</table>
+		</form>
+		<sub style="color: grey;">by- SanketSarkar</sub>
+	</div>
+
+</body>
+</html>
